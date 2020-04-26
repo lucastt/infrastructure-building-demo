@@ -1,5 +1,3 @@
-## infrastructure-building-demo
-
 # About this project
 
 In this repository, I will create a multi-provider platform for automate infrastructure, build and deploy the app user-agent-parser-demo.
