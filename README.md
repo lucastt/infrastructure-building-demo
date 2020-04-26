@@ -54,9 +54,9 @@ Here I'll expose what I plan to do with each tool and the priority of each task.
   
 As a final observation, this project has three hard requirements:
 
-1 - All interactions with the platform should happen through make;
-2 - All implementation should be done for GCP **and** AWS;
-3 - Each decision made by the developer should be documented in a journal format.
+1. All interactions with the platform should happen through make;
+2. All implementation should be done for GCP **and** AWS;
+3. Each decision made by the developer should be documented in a journal format.
 
 
 In this project I'll not accept PR from any other developer besides me, since this project is intended to help me study and understand each of this tools. **But** if anyone have any comment or sugestion would be very welcome, constructive comments and tips will accelerate my learning process and give me insights, serving for the propose of this project.
