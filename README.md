@@ -2,9 +2,9 @@
 
 In this repository, I will create a multi-provider platform for infrastructure automation, build and deploy of the app [user-agent-parser-demo](https://github.com/lucastt/useragent-parser-demo).
 
-My intension with this is to study, demonstrate and have a reference for my self on how to build a production ready platform to run services in the cloud.
+My intention with this is to study, demonstrate and have a reference for my self on how to build a production ready platform to run services in the cloud.
 
-The tools I intend to use are make, terraform, ansible, kubernetes and spinnaker. For personal interess I will create this infrastructure for two major cloud providers GCP and AWS, but I can exted the project in the future to study other cloud providers.
+The tools I intend to use are `make`, `terraform`, `ansible`, `kubernetes` and `spinnaker`. For personal interess I will create this infrastructure for two major cloud providers GCP and AWS, but I can exted the project in the future to study other cloud providers.
 
 For application understanding, please refer to the app repository, In this repository I will focus only in the building blocks of its infrastructure.
 
