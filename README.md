@@ -1,6 +1,6 @@
 # About this project
 
-In this repository, I will create a multi-provider platform for automate infrastructure, build and deploy the app user-agent-parser-demo.
+In this repository, I will create a multi-provider platform for infrastructure creation and automation, build and deploy the app user-agent-parser-demo.
 
 My intension with this is to study, demonstrate and have a reference for my self on how to build a production ready platform to run services in the cloud.
 
