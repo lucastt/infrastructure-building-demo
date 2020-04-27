@@ -67,7 +67,23 @@ TODO
 
 # Project arquitecture
 
-TODO
+### System topology
+
+###### Compute layer (k8s)
+![Compute layer (k8s)](docs/images/compute_layer.png?raw=true "")
+
+Initially the cluster will have six machines in the compute layer. The master (M1) will be alocated in the region us-east1, and the master replica (M2) will be alocated in us-west1, two other nodes will be alocated in each region.
+
+Initially, each master/node will run in a really samall machine, for GCP f1-micro, for AWS the equivalent of f1-micro. This is not really defined yet, since I don't know if the node can support the application.
+
+
+###### Data layer (MongoDB)
+
+![Data layer (MongoDB)](docs/images/data_layer.png?raw=true "Data layer (MongoDB)")
+  
+The application uses mongo DB, because mongo is web scale. Just kidding, when I wrote the app I was going to work in a brief project that use mongo DB, so I used my dummy app as a excuse to learn more about mongo.
+
+Mongo DB will run in two VMs. One of the VMs will run two instances of mongo DB (or one instance of mongod and other of mongo arbiter, that is not defined yet) and the other VM will run just one instance. Each VM will be in a different region. And last, but not least, a bucket will be created to store database backups, this bucket will be located in a third region us-central1. This settup will ensure great availability and reliability.
 
 # Usage
 
