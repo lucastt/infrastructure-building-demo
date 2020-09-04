@@ -49,7 +49,8 @@ Here I'll expose what I plan to do with each tool and the priority of each task.
 6. Plan the next steps...
 
   - What can I do to expand my knoledge? List it and start priorization and implementation;
-  - A nice idea is to apply chaos engineering to the platform, implement reliability improvements exposed by the tests and compare the performance of the tests runned in the created infra structure to a similar managed solution. 
+  - A nice idea is to apply chaos engineering to the platform, implement reliability improvements exposed by the tests and compare the performance of the tests runned in the created infra structure to a similar managed solution;
+  - It would be nice to manage a multi-cluster infrastructure in the future, create and edge loadbalancing layer in front of the clusters.
   
   
 As a final observation, this project has three hard requirements:
