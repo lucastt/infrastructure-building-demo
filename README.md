@@ -14,37 +14,37 @@ Here I'll expose what I plan to do with each tool and the priority of each task.
 
 1. Terraform
 
-  - Machine and service topology;
-  - Design the infrastructure necessary to support the application in a extremely reliable and easy to understand manner;
-  - Design a multi-cloud provider structure;
-  - Write terraform files that represent the designed infrastructure.
+  - [ ] Machine and service topology;
+  - [ ] Design the infrastructure necessary to support the application in a extremely reliable and easy to understand manner;
+  - [ ] Design a multi-cloud provider structure;
+  - [ ] Write terraform files that represent the designed infrastructure.
   
 2. kubernetes
 
-  - Test the app localy with mini kube, micro k8s or something like that, to explore what we coulkd do;
-  - Config k8s cluster from the ground up in a multi-region format;
-  - Run the app on the cluster;
-  - Implement meaningful healthchecks for the application and check it within kubernetes;
-  - Use envoy as cluster ingress and load balancer;
-  - Build unified logging and monitoring in the cluster;
-  - Make adjusts on the app and infrastructure archtecture if needed.
+  - [ ] Test the app localy with mini kube, micro k8s or something like that, to explore what we coulkd do;
+  - [ ] Config k8s cluster from the ground up in a multi-region format;
+  - [ ] Run the app on the cluster;
+  - [ ] Implement meaningful healthchecks for the application and check it within kubernetes;
+  - [ ] Use envoy as cluster ingress and load balancer;
+  - [ ] Build unified logging and monitoring in the cluster;
+  - [ ] Make adjusts on the app and infrastructure archtecture if needed.
   
 3. Ansible
 
-  - Automate all machine machine configuration to run kubernetes;
-  - Automate kubernetes cluster configuration.
+  - [ ] Automate all machine machine configuration to run kubernetes;
+  - [ ] Automate kubernetes cluster configuration.
   
 4. CI/CD and spinnaker
 
-  - Configure CI/CD for the app;
-  - Configure and run spinnaker;
-  - Explore spinnaker options;
-  - Design a good CD format using spinnaker.
+  - [ ] Configure CI/CD for the app;
+  - [ ] Configure and run spinnaker;
+  - [ ] Explore spinnaker options;
+  - [ ] Design a good CD format using spinnaker.
   
 5. Comparison and conclusions
 
-  - Run and compare the sulution to other managed solutions like EKS and GKE;
-  - Write clonclusions and thoughts
+  - [ ] Run and compare the sulution to other managed solutions like EKS and GKE;
+  - [ ] Write clonclusions and thoughts
   
 6. Plan the next steps...
 
