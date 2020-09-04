@@ -14,8 +14,8 @@ Here I'll expose what I plan to do with each tool and the priority of each task.
 
 1. Terraform
 
-  - [ ] Machine and service topology;
-  - [ ] Design the infrastructure necessary to support the application in a extremely reliable and easy to understand manner;
+  - [x] Machine and service topology;
+  - [ ] Design the infrastructure necessary to support the application in a extremely reliable and easy to understand manner (meaning the underlying resouces, e.g. networking, loadbalancing etc);
   - [ ] Design a multi-cloud provider structure;
   - [ ] Write terraform files that represent the designed infrastructure.
   
