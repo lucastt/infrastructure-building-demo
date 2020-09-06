@@ -18,6 +18,7 @@ Here I'll expose what I plan to do with each tool and the priority of each task.
   - [x] Design the infrastructure necessary to support the application in a extremely reliable and easy to understand manner (meaning the underlying resouces, e.g. networking, loadbalancing etc);
   - [x] Design a multi-cloud provider structure;
   - [ ] Write terraform files that represent the designed infrastructure:
+    - [ ] Build dockefile, makefile to run the automation code isolated;
     - [ ] Create a network host project;
     - [ ] Create subnets;
     - [ ] Create the app server project;
