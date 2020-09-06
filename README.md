@@ -71,29 +71,25 @@ I'm not sure how I would integrate the infrastructure with the code. Some people
 .
 ├── docs
 │   ├── diagrams
-│   │   └── demo_infra_design.drawio
 │   └── images
-│       ├── compute_layer.png
-│       ├── data_layer.png
-│       └── demo_infra_design.png
-├── LICENSE
 ├── Makefile
 ├── README.md
 └── src
-    └── user-agent-parser
-        ├── ansible
-        ├── k8s
-        └── terraform
-            ├── aws
-            │   └── cloud-resource-name
-            │       ├── dev
-            │       └── prd
-            └── gcp
-                └── cloud-resource-name
-                    ├── dev
-                    └── prd
+    ├── ansible
+    ├── k8s
+    └── terraform
+        ├── aws
+        │   └── cloud-resource-name
+        │       ├── dev
+        │       └── prd
+        └── gcp
+            └── cloud-resource-name
+                ├── dev
+                └── prd
+
 ```
 
+This structure should be generic for both aproaches.
 
 # Project arquitecture
 
