@@ -75,18 +75,22 @@ I'm not sure how I would integrate the infrastructure with the code. Some people
 ├── Makefile
 ├── README.md
 └── src
-    ├── ansible
-    ├── k8s
-    └── terraform
-        ├── aws
-        │   └── cloud-resource-name
-        │       ├── dev
-        │       └── prd
-        └── gcp
-            └── cloud-resource-name
-                ├── dev
-                └── prd
-
+    ├── dev
+    │   ├── ansible
+    │   ├── k8s
+    │   └── terraform
+    │       ├── aws
+    │       │   └── cloud-resource-name
+    │       └── gcp
+    │           └── cloud-resource-name
+    └── prd
+        ├── ansible
+        ├── k8s
+        └── terraform
+            ├── aws
+            │   └── cloud-resource-name
+            └── gcp
+                └── cloud-resource-name
 ```
 
 This structure should be generic for both aproaches.
