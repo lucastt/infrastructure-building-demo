@@ -15,7 +15,7 @@ Here I'll expose what I plan to do with each tool and the priority of each task.
 1. Terraform
 
   - [x] Machine and service topology;
-  - [ ] Design the infrastructure necessary to support the application in a extremely reliable and easy to understand manner (meaning the underlying resouces, e.g. networking, loadbalancing etc);
+  - [x] Design the infrastructure necessary to support the application in a extremely reliable and easy to understand manner (meaning the underlying resouces, e.g. networking, loadbalancing etc);
   - [ ] Design a multi-cloud provider structure;
   - [ ] Write terraform files that represent the designed infrastructure.
   
@@ -86,6 +86,21 @@ Initially, each master/node will run in a really samall machine, for GCP f1-micr
 The application uses mongo DB, because mongo is web scale. Just kidding, when I wrote the app I was going to work in a brief project that use mongo DB, so I used my dummy app as a excuse to learn more about mongo.
 
 Mongo DB will run in two VMs. One of the VMs will run two instances of mongo DB (or one instance of mongod and other of mongo arbiter, that is not defined yet) and the other VM will run just one instance. Each VM will be in a different region. And last, but not least, a bucket will be created to store database backups, this bucket will be located in a third region us-central1. This settup will ensure great availability and reliability.
+
+### System design
+
+![System design overview](docs/images/demo_infra_design.png?raw=true "System design overview")
+
+There is not much to say here. All the project will be in the same network, only two structures will have public IP, bastion protected with IAM and firewalls and te cluster ingress. Databases will be in a separate subnet protected by firewall. Backup will be stored in a cloud storage product (google storage or S3), it will be protected with IAM and encription.I tried to keep the system simple, if someday I build a multi cluster structure  this diagram will change a bit. Some other structures are not present in this diagram, thing like DNS. By no means this diagram is complete, I'll increment it as the project goes.
+
+The table bellow will specify the subnets and their IP ranges.
+
+| Subnet name    | Subnet IP range |
+| :------------- | :----------:    |
+| App subnet     | TODO            |
+| DB subnet      | TODO            |
+| Bastion subnet | TODO            |
+
 
 # Usage
 
