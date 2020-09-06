@@ -16,7 +16,7 @@ Here I'll expose what I plan to do with each tool and the priority of each task.
 
   - [x] Machine and service topology;
   - [x] Design the infrastructure necessary to support the application in a extremely reliable and easy to understand manner (meaning the underlying resouces, e.g. networking, loadbalancing etc);
-  - [ ] Design a multi-cloud provider structure;
+  - [x] Design a multi-cloud provider structure;
   - [ ] Write terraform files that represent the designed infrastructure.
   
 2. kubernetes
@@ -65,7 +65,35 @@ In this project I'll not accept PR from any other developer besides me, since th
 
 # Project structure
 
-TODO
+I'm not sure how I would integrate the infrastructure with the code. Some people say that is better to keep this infrastructure project in the same repository of the code, but I saw many projects working well with these files separated. In this project I want to make a generic structure. The structure will be like this:
+
+```
+.
+├── docs
+│   ├── diagrams
+│   │   └── demo_infra_design.drawio
+│   └── images
+│       ├── compute_layer.png
+│       ├── data_layer.png
+│       └── demo_infra_design.png
+├── LICENSE
+├── Makefile
+├── README.md
+└── src
+    └── user-agent-parser
+        ├── ansible
+        ├── k8s
+        └── terraform
+            ├── aws
+            │   └── cloud-resource-name
+            │       ├── dev
+            │       └── prd
+            └── gcp
+                └── cloud-resource-name
+                    ├── dev
+                    └── prd
+```
+
 
 # Project arquitecture
 
